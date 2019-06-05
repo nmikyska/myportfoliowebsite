@@ -1,0 +1,362 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url("images/background2.jpg");
+	/* background-color: #ffffff; */
+}
+.font{
+	font-family: 'Lato', sans-serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+  grid-template-areas: "nameContactInfo nameContactInfo nameContactInfo nameContactInfo" 
+	  "aboutMe aboutMe skills skills" 
+	  "Projects Projects Projects Projects" 
+	  "project1 project2 project3 project4 project5 project6" 
+	  "education education interests interests" 
+	  "ContactMe ContactMe ContactMe ContactMe" 
+	  "contact-form contact-form thankYou thankYou" 
+	  "prefooter prefooter prefooter prefooter" 
+	  "footer footer footer footer";
+}
+.nameContactInfo{
+	grid-column: 1 / span 4;
+	/* background-color: yellow; */
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.nameContactInfo h1{
+	font-size: 50px;
+	letter-spacing: 2px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.nameContactInfo p{
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+.nameContactInfo a{
+	color: #000000;
+	text-decoration: none;
+}
+.underline{
+	width: 300px;
+	margin: 10px auto;
+	text-align: center;
+	border-bottom: 1px solid red;
+}
+.red{
+	color: red;
+	font-size: 26px;
+	font-style: italic;
+}
+.aboutMe{
+	grid-column: 1 / span 2;
+	/* background-color: green; */
+	font-size: 22px;
+	text-align: center;
+	padding-top: 20px;
+}
+.aboutMe p{
+	padding: 20px 40px;
+	font-size: 20px;
+	
+}
+.skills{
+	grid-column: 3 / span 2;
+	/* background-color: blue; */
+	font-size: 22px;
+	text-align: center;
+	padding-top: 20px;
+}
+.skills p{
+	padding: 20px 40px 30px;
+	font-size: 20px;
+}
+
+.Projects{
+	grid-column: 1 / span 4;
+	/* background-color: purple; */
+	text-align: center;
+	font-size: 24px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+}
+.Projects h2{
+	padding-top: 20px;
+}
+.projectGrid{
+	align-items: center;
+	grid-column: 1 / span 4;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 50px;
+}
+.box{
+	background-color: white;
+}
+.project1, .project2, .project3, .project4, .project5, .project6{
+	/*display: flex;
+	flex-wrap: wrap;*/
+	align-items: center;
+	/* background-color: pink; */
+	text-align: center;
+	/* border: 1px solid red; */
+	font-size: 18px;
+	width: 300px;
+	height: 200px;
+	margin: 10px auto;/*this centers the last row of projects in case of odd # with flow*/
+}
+.project1, .project2, .project3, .project4, .project5, .project6 img{
+	padding-top: 0px;
+}
+
+.project1, .project3, .project4, .project5, .project6 h3{
+	padding-top: 10px;
+}
+.project1 img{
+	background-color: #ffffff;
+}
+.project2 img{
+	padding-top: 20px;
+	margin-top: 30px;
+}
+.project2 h3{
+	padding-top: 30px;
+}
+.project5, .project6 img{
+	margin-top: 40px;
+}
+.text{
+	font-size: 16px;
+	line-height: 1.5em;
+}
+.education{
+	grid-column: 1 / span 2;
+	/* background-color: green; */
+	font-size: 22px;
+	text-align: center;
+	padding-top: 70px;
+}
+.education p{
+	padding: 20px 40px 30px;
+	font-size: 20px;
+	line-height: 25px;
+}
+.interests{
+	grid-column: 3 / span 2;
+	/* background-color: blue; */
+	font-size: 22px;
+	text-align: center;
+	padding-top: 70px;
+}
+.interests p{
+	padding: 20px 40px 30px;
+	font-size: 20px;
+}
+.ContactMe{
+	grid-column: 1 / span 4;
+	/* background-color: purple; */
+	text-align: center;
+	font-size: 24px;
+	margin-top: 40px;
+	padding-bottom: 20px;
+}
+.ContactMe h2{
+	padding-top: 20px;
+}
+.contact-form{
+	grid-column: 1 / span 2;
+	/* background-color: green; */
+	font-size: 22px;
+	text-align: center;
+	margin-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px 0px;
+  border: 1px solid #ccc;
+  /*border-radius: 4px;*/
+  resize: vertical;
+}
+
+label {
+  padding: 12px 0px 12px 0;
+  display: inline-block;
+  font-size: 18px;
+}
+
+input[type=submit]{
+	font-family: serif;
+	text-transform: uppercase;
+	width: 150px;
+	font-size: 20px;
+	background-color: #333;
+	color: white;
+	margin-top: 10px;
+	padding: 12px 0px;
+	border: none;
+	/*border-radius: 4px;*/
+	cursor: pointer;
+	float: right;
+}
+
+input[type=submit]:hover{
+  background-color: #000;
+}
+
+.formContainer {
+  /*border-radius: 5px;*/
+  /*background-color: #f9f9f9;*/
+  padding: 10px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.thankYou{
+	grid-column: 1 / span 4;
+	/*grid-column: 3 / span 2; taken to full width after deleting the form*/
+	/* background-color: yellow; */
+	font-size: 22px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.thankYou p{
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+}
+.thankYou a{
+	color: #000000;
+	text-decoration: none;
+}
+.message{
+	padding: 20px 40px;
+
+}
+
+.prefooter{
+	grid-column: 1 / span 4;
+	/* background-color: blue; */
+	font-size: 30px;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 20px;
+}
+.backToTop{
+	font-size: 35px;
+	color: black;
+	padding-left: 3px;
+}
+.backToTop:hover{
+	color: red;
+}
+.fa-home{
+	font-size: 35px;
+	margin-top: 20px;
+	color: black;
+	padding-right: 4px;
+}
+.fa-home:hover{
+	color: red;
+}
+.footer{
+	grid-column: 1 / span 4;
+	/* background-color: rgb(0, 247, 255); */
+	font-size: 30px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.footer p{
+	font-size: 20px;
+}
+.btn{
+	width: 250px;
+	font-size: 20px;
+	background-color: #333;
+	color: white;
+	margin-top: 30px;
+	padding: 12px 0px;
+	border: none;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+.btn:hover{
+	background-color: #000000;
+}
+.process{
+	grid-column: 2 / span 2;
+	margin-top: 0;
+}
+.process p{
+	/* text-align: left; */
+	font-size: 20px;
+	padding-bottom: 20px;
+	
+}
+
+
+@media only screen and (max-width:950px){
+	.nameContactInfo h1{
+		font-size: 44px;
+		
+	}
+	.aboutMe{
+		grid-column: 1 / span 4;
+		
+	}
+	.skills{
+		grid-column: 1 / span 4;
+		
+	}
+	.education{
+		grid-column: 1 / span 4;
+		
+	}
+	.interests{
+		grid-column: 1 / span 4;
+		
+	}
+	.contact-form{
+		grid-column: 1 / span 4;
+		
+	}.formContainer label{
+		text-align: left;
+	}
+	.col-25, .col-75, input[type=submit] {
+			width: 100%;
+			margin-top: 0;
+		}
+	.thankYou{
+		grid-column: 1 / span 4;
+		
+	}
+}
