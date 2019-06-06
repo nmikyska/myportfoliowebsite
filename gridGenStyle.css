@@ -123,13 +123,16 @@ body{
 .project1 img{
 	background-color: #ffffff;
 }
-.project2 img{
+
+img .oblLogo{
 	padding-top: 20px;
 	margin-top: 30px;
 }
+
 .project2 h3{
 	padding-top: 30px;
 }
+
 .project5, .project6 img{
 	margin-top: 40px;
 }
@@ -138,10 +141,10 @@ body{
 	line-height: 1.5em;
 	
 }
-.projectGit{
+img .projectGit{
 	margin-top: 0 !important;
 	padding-top: 5px !important;
-	padding-left: 10px;
+	padding-left: 10px !important;
 }
 .education{
 	grid-column: 1 / span 2;
