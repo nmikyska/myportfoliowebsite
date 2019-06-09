@@ -12,8 +12,8 @@ body{
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
   grid-template-areas: "nameContactInfo nameContactInfo nameContactInfo nameContactInfo" 
 	  "aboutMe aboutMe skills skills" 
 	  "Projects Projects Projects Projects" 
@@ -96,11 +96,13 @@ body{
 	grid-column: 1 / span 4;
 	display: flex;
 	flex-wrap: wrap;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 }
 .box{
 	background-color: white;
+	
 }
+
 .project1, .project2, .project3, .project4, .project5, .project6{
 	/*display: flex;
 	flex-wrap: wrap;*/
@@ -113,11 +115,12 @@ body{
 	height: 200px;
 	margin: 10px auto;/*this centers the last row of projects in case of odd # with flow*/
 }
+
 .project1, .project2, .project3, .project4, .project5, .project6 img{
 	padding-top: 0px;
 }
 
-.project1, .project3, .project4, .project5, .project6 h3{
+.project1 h3, .project3 h3, .project4 h3, .project5 h3, .project6 h3{
 	padding-top: 10px;
 }
 .project1 img{
@@ -133,18 +136,23 @@ img .oblLogo{
 	padding-top: 30px;
 }
 
-.project5, .project6 img{
+.project5 img, .project6 img{
 	margin-top: 40px;
 }
 .text{
 	font-size: 16px;
 	line-height: 1.5em;
+	margin-bottom: 10px;
 	
 }
+
 img .projectGit{
 	margin-top: 0 !important;
 	padding-top: 5px !important;
 	padding-left: 10px !important;
+}
+.git6{
+	margin-top: 0 !important;
 }
 .education{
 	grid-column: 1 / span 2;
@@ -344,6 +352,32 @@ input[type=submit]:hover{
 	}
 	.skills{
 		grid-column: 1 / span 4;
+		
+	}
+	.projectGrid{
+		padding-bottom: 200px;
+	}
+	.project3 img {
+		margin-top: 20px;
+	}
+	.project4 img{
+		margin-top: 60px;
+	}
+	.project5 img{
+		margin-top: 90px;
+	}
+	.project6 img{
+		margin-top: 100px;
+	}
+	.project3 .text{
+		margin-top: -20px;
+	}
+	.project4 .text{
+		margin-top: -60px;
+	}
+	
+	.git6{
+		margin-top: 0 !important;
 		
 	}
 	.education{
