@@ -100,7 +100,7 @@ body{
 }
 .box{
 	background-color: white;
-	
+
 }
 
 .project1, .project2, .project3, .project4, .project5, .project6{
@@ -339,7 +339,14 @@ input[type=submit]:hover{
 	padding-bottom: 20px;
 	
 }
-
+@media only screen and (max-width:1217px){
+	.project4 img{
+		margin-top: 40px;
+	}
+	.git4{
+		margin-top: 0px !important;
+	}
+}
 
 @media only screen and (max-width:950px){
 	.nameContactInfo h1{
@@ -361,19 +368,19 @@ input[type=submit]:hover{
 		margin-top: 20px;
 	}
 	.project4 img{
-		margin-top: 60px;
+		margin-top: 90px;
 	}
 	.project5 img{
 		margin-top: 90px;
 	}
 	.project6 img{
-		margin-top: 100px;
+		margin-top: 90px;
 	}
 	.project3 .text{
 		margin-top: -20px;
 	}
 	.project4 .text{
-		margin-top: -60px;
+		margin-top: 0px;
 	}
 	
 	.git6{
@@ -403,6 +410,22 @@ input[type=submit]:hover{
 		
 	}
 	
+}
+@media only screen and (max-width:916px){
+	.project3 img, .project4 img{
+		margin-top: 40px;
+	}
+	.git3{
+		margin-top: 0;
+	}
+	.project3 .text{
+		margin-top: -35px;
+	}
+}
+@media only screen and (max-width:617px){
+	.project4 img{
+		margin-top: 70px;
+	}
 }
 @media only screen and (max-width:415px){
 	.nameContactInfo h1{
